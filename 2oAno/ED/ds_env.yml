@@ -1,0 +1,13 @@
+name: ds
+channels:
+- anaconda 
+- defaults
+- conda-forge
+dependencies:
+- python
+- pandas
+- seaborn
+- statsmodels
+- scikit-learn
+- networkx
+- jupyterlab
