@@ -31,3 +31,6 @@
 [submodule "1oAno/1oSemestre/RI/RI_Artificial_Vision_Robot"]
 	path = 1oAno/1oSemestre/RI/RI_Artificial_Vision_Robot
 	url = git@github.com:FlipGoncalves/ArtificialVision-Robot.git
+[submodule "1oAno/1oSemestre/PSR/PSR_Robo_Butler"]
+	path = 1oAno/1oSemestre/PSR/PSR_Robo_Butler
+	url = git@github.com:FlipGoncalves/RoboButler_PSR.git

@@ -1,0 +1,30 @@
+HOW TO RUN:
+
+1. 
+catkin_make
+
+2.
+source devel/setup.bash && rosrun <package> <file>
+
+----------------------------------------------------------------
+
+CREATE NEW WORSPACE:
+
+1. 
+mkdir <workspace>
+
+2.
+mkdir <workspace>/src
+
+3.
+cd src
+
+4.
+catkin_init_workspace
+
+----------------------------------------------------------------
+
+CREATE NEW PACKAGE:
+
+1.
+catkin_create_pkg <package> std_msgs rospy
