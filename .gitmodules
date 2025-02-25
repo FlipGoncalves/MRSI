@@ -37,3 +37,6 @@
 [submodule "1oAno/1oSemestre/VS/VC_Keyboard_Detection"]
 	path = 1oAno/1oSemestre/VS/VC_Keyboard_Detection
 	url = git@github.com:FlipGoncalves/KeyboardDetection.git
+[submodule "1oAno/1oSemestre/VC/VC_Keyboard_Detection"]
+	path = 1oAno/1oSemestre/VC/VC_Keyboard_Detection
+	url = git@github.com:FlipGoncalves/KeyboardDetection.git
