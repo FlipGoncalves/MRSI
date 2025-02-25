@@ -4,3 +4,9 @@
 [submodule "1oAno/2oSemestre/GIC/GIC_Project"]
 	path = 1oAno/2oSemestre/GIC/GIC_Project
 	url = git@github.com:FlipGoncalves/Veniqa.git
+[submodule "1oAno/2oSemestre/RM/RM_Probabilistic_Localization"]
+	path = 1oAno/2oSemestre/RM/RM_Probabilistic_Localization
+	url = git@github.com:FlipGoncalves/RobotProbabilisticLocalization.git
+[submodule "1oAno/2oSemestre/RM/RM_MIR_Cleaner"]
+	path = 1oAno/2oSemestre/RM/RM_MIR_Cleaner
+	url = git@github.com:FlipGoncalves/MIRCleaner.git
