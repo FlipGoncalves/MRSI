@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2>Add Anime</h2>
+  <form method="post" action="{% url 'insertData' %}">
+    {% csrf_token %}
+    <div class="row mb-3">
+      <div class="col-sm-4">
+        <label for="id_title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="id_title" name="title">
+      </div>
+      <div class="col-sm-4">
+        <label for="id_genre" class="form-label">Genre</label>
+        <input type="text" class="form-control" id="id_genre" name="genre">
+      </div>
+      <div class="col-sm-4">
+        <label for="id_score" class="form-label">Score</label>
+        <input type="text" class="form-control" id="id_score" name="score">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-sm-4">
+        <label for="id_numeps" class="form-label">Number of Episodes</label>
+        <input type="text" class="form-control" id="id_numeps" name="numeps">
+      </div>
+      <div class="col-sm-4">
+        <label for="id_rank" class="form-label">Rank</label>
+        <input type="text" class="form-control" id="id_rank" name="rank">
+      </div>
+      <div class="col-sm-4">
+        <label for="id_status" class="form-label">Status</label>
+        <input type="text" class="form-control" id="id_status" name="status">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-sm-4">
+        <label for="id_duration" class="form-label">Duration</label>
+        <input type="text" class="form-control" id="id_duration" name="duration">
+      </div>
+      <div class="col-sm-4">
+        <label for="id_studio" class="form-label">Studio</label>
+        <input type="text" class="form-control" id="id_studio" name="studio">
+      </div>
+      <div class="col-sm-4">
+        <label for="id_demo" class="form-label">Demographic</label>
+        <input type="text" class="form-control" id="id_demo" name="demo">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Anime</button>
+
+  </form>
+  {% if error %}
+    <div class="alert alert-danger mt-3" role="alert">
+      Error: {{ error }}
+    </div>
+  {% elif success %}
+    <div class="alert alert-success mt-3" role="alert">
+      Success: {{ success }}
+    </div>
+  {% endif %}
+
+</div>
+{% endblock %}

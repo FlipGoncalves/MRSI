@@ -1,0 +1,56 @@
+<script type="text/javascript" src="{{ STATIC_URL }} /static/jquery-3.6.4.js">
+</script>
+
+{% load static %}
+{% load bootstrap4 %}
+
+
+<head>
+	{% bootstrap_css %}
+	{% bootstrap_javascript %}
+	<link rel="stylesheet" href="{% static 'index.css' %}">
+<head>
+
+<body vocab="http://schema.org/">
+<div typeof="CreativeWork">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="/">AniN3</a>
+	<form class="form-inline" method="get" action="{% url 'searchByName' %}" style="padding-right: 10px;">
+		<input class="form-control mr-sm-2" name="query" type="search" placeholder="Search" aria-label="Search">
+		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	</form>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+	  <ul class="navbar-nav">
+		<li style="padding-right: 10px;">
+			<div class="btn-nav"><a class="transparentButton" href="{% url 'randomAnime'%}">Random</a>
+			</div>
+		</li>
+		<li style="padding-right: 10px;">
+			<div class="btn-nav"><a class="transparentButton" href="{% url 'getGenres'%}">Genres</a>
+			</div>
+		</li>
+		<li style="padding-right: 10px;">
+			<div class="btn-nav"><a class="transparentButton" href="{% url 'getCharacters'%}">Characters</a>
+			</div>
+		</li>
+	  </ul>
+	</div>	  
+	<ul class="nav navbar-nav navbar-right">
+		<li>
+			<div class="btn-nav"><a class="btn btn-primary btn-small navbar-btn" href="{% url 'insertData' %}">Create</a>
+			</div>
+		</li>
+	</ul>
+</nav>
+
+
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</div>
+</body>
