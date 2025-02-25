@@ -22,3 +22,12 @@
 [submodule "1oAno/2oSemestre/SI II/SI_BombermanAI"]
 	path = 1oAno/2oSemestre/SI II/SI_BombermanAI
 	url = git@github.com:FlipGoncalves/BombermanAI.git
+[submodule "1oAno/1oSemestre/RI/RI_3D_ObjectSimulation"]
+	path = 1oAno/1oSemestre/RI/RI_3D_ObjectSimulation
+	url = git@github.com:FlipGoncalves/3D_ObjectSimulation.git
+[submodule "1oAno/1oSemestre/RI/RI_Inspection_Operations"]
+	path = 1oAno/1oSemestre/RI/RI_Inspection_Operations
+	url = git@github.com:FlipGoncalves/Inspection_Operations.git
+[submodule "1oAno/1oSemestre/RI/RI_Artificial_Vision_Robot"]
+	path = 1oAno/1oSemestre/RI/RI_Artificial_Vision_Robot
+	url = git@github.com:FlipGoncalves/ArtificialVision-Robot.git
