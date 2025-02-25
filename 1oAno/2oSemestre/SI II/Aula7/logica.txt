@@ -1,0 +1,65 @@
+Male INTERSECAO Female PERTENCE Vazio
+FOL: 
+Qqr x ( Male(x) E Female(x) -> False )
+Qqr x ( ~(Male(x) E Female(x)) OU False )
+Qqr x ( ~Male(x) OU ~Female(X) OU False )
+Qqr x ~Male(x) OU ~Female(X)
+
+
+(E)married.T INTERSECAO CatholicPriest PERTENCE Vazio
+FOL:
+Qqr x ( Exis y married(x,y) E True E CatholicPriest(y) -> False )
+Qqr x ~( Qqr y (married(x,y) E True E CatholicPriest(y)) OU False )
+Qqr x ( Qqr y ~married(x,y) OU False OU ~CatholicPriest(y) OU False )
+Qqr x Qqr y  ~married(x,y) OU ~CatholicPriest(y)
+
+
+T PERTENCE Male DISJUNCAO Female
+FOL:
+Qqr x Male(x) OU Female(x)
+
+
+T PERTENCE (E)hasParent.Person 
+FOL:
+Qqr x True -> Exis y hasParent(x,y) E Person(y)
+QQr x Exis y hasParent(x,y) E Person(y)
+
+
+T Pertence (Qqr)childOf.Parent
+FOL:
+Qqr x True -> Qqr y childOf(x,y) -> Parent(y)
+Qqr x Qqr y childOf(x,y) -> Parent(y)
+
+
+Parent EQUIVALENTE (E)parentOf.T
+FOL:
+Qqr x Parent <-> Exis y parentOf(x,y) E True
+Qqr x Parent <-> Exis y parentOf(x,y)
+
+
+(E)sonOf.T PERTENCE Male
+FOL:
+Qqr x Exis y sonOf(x,y) E True -> Male(x)
+Qqr x Exis y sonOf(x,y) -> Male(x)
+
+
+Portuguese PERTENCE (E)knows.{Marcelo}
+FOL:
+Qqr x Portuguese(x) -> Exis y knows(x,y) E {Marcelo}(y)
+Qqr x Portuguese(x) -> Exis y knows(x,y) E y=Marcelo
+Qqr x Portuguese(x) -> Exis y knows(x,Marcelo)
+
+
+Grandmother EQUIVALENTE Mother CONJUNCAO (E)hasChild.Parent
+FOL:
+Qqr x Grandmother(x) <-> Mother(x) E Exis y hasChild(x,y) E Parent(y)
+
+
+(E)parentOf.(E)parentOf.T PERTENCE GrandParent
+FOL:
+Qqr x Exis y parentOf(x,y) E Exis z parentOf(y,z) E TRUE -> GrandParent(x)
+
+
+Xmom EQUIVALENTE Person CONJUNCAO (<=1 hasChild DISJUNCAO (>=3 hasChild CONJUNCAO (E)hasChild.Female))
+FOL:
+Qqr x Xmom(x) <-> Person(x) E  (( ~Exis y Exis z y DIF z E hasChild(x,y) E hasChild(x,z) ) OU ( Exis y Exis z Exis w  y DIF z E y DIF w E z DIF w E hasChild(x,y) E hasChild(x,z) E hsaChild(x,w)) E ( Exis y hasChild(x,y) E Female(y) )) 

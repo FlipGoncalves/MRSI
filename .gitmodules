@@ -16,3 +16,9 @@
 [submodule "1oAno/1oSemestre/PC/PC_WallFollowing"]
 	path = 1oAno/1oSemestre/PC/PC_WallFollowing
 	url = git@github.com:FlipGoncalves/WallFollowing.git
+[submodule "1oAno/2oSemestre/SI II/SI_ChatBot"]
+	path = 1oAno/2oSemestre/SI II/SI_ChatBot
+	url = git@github.com:FlipGoncalves/ChatBot.git
+[submodule "1oAno/2oSemestre/SI II/SI_BombermanAI"]
+	path = 1oAno/2oSemestre/SI II/SI_BombermanAI
+	url = git@github.com:FlipGoncalves/BombermanAI.git
