@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/filipino/Desktop/somm24nm-fso-g02/lib/libswp.a CMakeFiles/swp.dir/swp_init.cpp.o CMakeFiles/swp.dir/swp_term.cpp.o CMakeFiles/swp.dir/swp_print.cpp.o CMakeFiles/swp.dir/swp_insert.cpp.o CMakeFiles/swp.dir/swp_fetch.cpp.o
+/usr/bin/ranlib /home/filipino/Desktop/somm24nm-fso-g02/lib/libswp.a

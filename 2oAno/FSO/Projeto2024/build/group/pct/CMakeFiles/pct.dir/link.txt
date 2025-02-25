@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/filipino/Desktop/somm24nm-fso-g02/lib/libpct.a CMakeFiles/pct.dir/pct_init.cpp.o CMakeFiles/pct.dir/pct_term.cpp.o CMakeFiles/pct.dir/pct_print.cpp.o CMakeFiles/pct.dir/pct_new_process.cpp.o CMakeFiles/pct.dir/pct_getters.cpp.o CMakeFiles/pct.dir/pct_update_state.cpp.o
+/usr/bin/ranlib /home/filipino/Desktop/somm24nm-fso-g02/lib/libpct.a

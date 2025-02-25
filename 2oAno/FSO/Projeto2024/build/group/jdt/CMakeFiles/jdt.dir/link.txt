@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/filipino/Desktop/somm24nm-fso-g02/lib/libjdt.a CMakeFiles/jdt.dir/jdt_init.cpp.o CMakeFiles/jdt.dir/jdt_term.cpp.o CMakeFiles/jdt.dir/jdt_print.cpp.o CMakeFiles/jdt.dir/jdt_load.cpp.o CMakeFiles/jdt.dir/jdt_random_fill.cpp.o CMakeFiles/jdt.dir/jdt_next.cpp.o
+/usr/bin/ranlib /home/filipino/Desktop/somm24nm-fso-g02/lib/libjdt.a
